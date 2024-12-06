@@ -3,12 +3,13 @@
 #include <vector>
 #include <memory>
 #include <string>
+#include <iostream>
+#include <algorithm>
 
 #include "Card.h"
 #include "PlayerI.h"
 #include "HumanPlayer.h"
 #include "AiPlayer.h"
-
 
 class PokerGame {
 public:
@@ -21,9 +22,19 @@ public:
 private:
 	std::vector<CardClass::Card> deck;
 	std::vector<std::shared_ptr<PlayerI>> players;
+
 	const int MAX_NUM_PLAYERS = 7;
 	const int MIN_NUM_PLAYERS = 2;
 
-	int getValidUserInt();
 	int moneyPot;
+	int previousBet;
+	int ante;
+	bool bettingIsOpen;
+	
+	void dealCards();
+	void showDown();
+	bool checkFoldedWinner();
+	void bettingRound();
+	void drawRound();
+	int getValidUserInt();
 };

@@ -7,5 +7,10 @@ int main() {
 
 	PokerGame mainGame;
 
+	mainGame.initGame();
+	mainGame.createDeck();
+	mainGame.shuffleDeck();
+	mainGame.playPoker();
+
 	return 0;
 }

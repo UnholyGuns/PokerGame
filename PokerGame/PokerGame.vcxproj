@@ -130,6 +130,7 @@
     <ClCompile Include="AiPlayer.cpp" />
     <ClCompile Include="HumanPlayer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PlayerI.cpp" />
     <ClCompile Include="PokerGame.cpp" />
   </ItemGroup>
   <ItemGroup>

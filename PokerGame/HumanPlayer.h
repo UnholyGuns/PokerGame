@@ -5,7 +5,7 @@
 class HumanPlayer : public PlayerI {
 public:
 	HumanPlayer(std::string name);
-	void makeDecision() override;
+	int placeBet(int previousBet, bool& bettingIsOpen) override;
+	void drawCards(std::vector<CardClass::Card> deck) override;
 	void lookAtHand() override;
-
 };

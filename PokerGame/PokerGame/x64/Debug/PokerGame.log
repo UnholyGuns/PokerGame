@@ -1,25 +1,2 @@
-﻿  AiPlayer.cpp
-C:\Users\fergutr1\Documents\MyStuff\Masters\Classes\Fall 2024\C++\PokerGame\PokerGame\AiPlayer.cpp(14,10): error C2039: 'cout': is not a member of 'std'
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string(23,1):
-      see declaration of 'std'
-  
-C:\Users\fergutr1\Documents\MyStuff\Masters\Classes\Fall 2024\C++\PokerGame\PokerGame\AiPlayer.cpp(14,10): error C2065: 'cout': undeclared identifier
-C:\Users\fergutr1\Documents\MyStuff\Masters\Classes\Fall 2024\C++\PokerGame\PokerGame\AiPlayer.cpp(14,52): error C2039: 'endl': is not a member of 'std'
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string(23,1):
-      see declaration of 'std'
-  
-C:\Users\fergutr1\Documents\MyStuff\Masters\Classes\Fall 2024\C++\PokerGame\PokerGame\AiPlayer.cpp(14,52): error C2065: 'endl': undeclared identifier
-C:\Users\fergutr1\Documents\MyStuff\Masters\Classes\Fall 2024\C++\PokerGame\PokerGame\AiPlayer.cpp(16,14): error C2039: 'cout': is not a member of 'std'
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string(23,1):
-      see declaration of 'std'
-  
-C:\Users\fergutr1\Documents\MyStuff\Masters\Classes\Fall 2024\C++\PokerGame\PokerGame\AiPlayer.cpp(16,14): error C2065: 'cout': undeclared identifier
-C:\Users\fergutr1\Documents\MyStuff\Masters\Classes\Fall 2024\C++\PokerGame\PokerGame\AiPlayer.cpp(16,63): error C2039: 'endl': is not a member of 'std'
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string(23,1):
-      see declaration of 'std'
-  
-C:\Users\fergutr1\Documents\MyStuff\Masters\Classes\Fall 2024\C++\PokerGame\PokerGame\AiPlayer.cpp(16,63): error C2065: 'endl': undeclared identifier
-  HumanPlayer.cpp
-  PokerGame.cpp
-  main.cpp
-  Generating Code...
+﻿  HumanPlayer.cpp
+  PokerGame.vcxproj -> C:\Users\fergutr1\Documents\MyStuff\Masters\Classes\Fall 2024\C++\PokerGame\PokerGame\x64\Debug\PokerGame.exe

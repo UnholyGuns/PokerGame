@@ -1,12 +1,14 @@
 #pragma once
 
 #include "PlayerI.h"
-#include <string>
 
 class AiPlayer : public PlayerI {
 public:
-
 	AiPlayer(int index);
-	void makeDecision() override;
+	int placeBet(int previousBet, bool& bettingIsOpen) override;
+	void drawCards(std::vector<CardClass::Card> deck) override;
 	void lookAtHand() override;
+
+private:
+	int getHandStrength();
 };
