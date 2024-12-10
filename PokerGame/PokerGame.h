@@ -10,8 +10,10 @@
 #include "PlayerI.h"
 #include "HumanPlayer.h"
 #include "AiPlayer.h"
+#include "pokerHand.h"
 
-class PokerGame {
+class PokerGame 
+{
 public:
 	PokerGame();
 	void shuffleDeck();
@@ -22,10 +24,8 @@ public:
 private:
 	std::vector<CardClass::Card> deck;
 	std::vector<std::shared_ptr<PlayerI>> players;
-
 	const int MAX_NUM_PLAYERS = 7;
 	const int MIN_NUM_PLAYERS = 2;
-
 	int moneyPot;
 	int previousBet;
 	int ante;
@@ -37,4 +37,5 @@ private:
 	void bettingRound();
 	void drawRound();
 	int getValidUserInt();
+
 };

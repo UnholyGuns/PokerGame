@@ -4,8 +4,11 @@ void PokerGame::createDeck()
 {
     const std::vector<std::string> ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
     const std::vector<std::string> suits = { "Hearts", "Diamonds", "Clubs", "Spades" };
-    for (const auto& rank : ranks) {
-        for (const auto& suit : suits) {
+
+    for (const auto& rank : ranks) 
+    {
+        for (const auto& suit : suits) 
+        {
             this->deck.push_back({ rank, suit });
         }
     }
@@ -23,8 +26,9 @@ void PokerGame::shuffleDeck()
     // Seed the rand function so its different everytime
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
 
-    for (size_t i = this->deck.size() - 1; i > 0; --i) {
-        int j = std::rand() % (i + 1); // Generate a random index in range [0, i]
+    for (size_t i = this->deck.size() - 1; i > 0; i++) 
+    {
+        int j = std::rand() % (i + 1); // Generate a random index
         std::swap(this->deck[i], this->deck[j]);// Swap the current element with the randomly chosen element
     }
 }
@@ -39,7 +43,7 @@ void PokerGame::initGame()
         numHuman = getValidUserInt();
     } while ( numHuman > MAX_NUM_PLAYERS );
 
-    // Get Number of AI players (2 <= max players <= 7)
+    // Get number of AI players (2 <= max players <= 7)
     int numAi;
     do 
     {
@@ -53,7 +57,7 @@ void PokerGame::initGame()
     for (int i = 0; i < numHuman; i++) 
     { 
         std::cout << "Enter player " << i << "s name: ";
-        std::cin >> name;
+        std::getline(std::cin, name);
         players.push_back(std::make_shared<HumanPlayer>(name));
     }
 
@@ -67,6 +71,7 @@ void PokerGame::initGame()
 
     std::cout << "Whats the ante?: ";
     ante = getValidUserInt();
+
     moneyPot += (numAi + numHuman) * ante;
     std::cout << "The pot contains $" << moneyPot << std::endl;
 }
@@ -78,6 +83,7 @@ void PokerGame::playPoker()
 
     // First round of betting
     previousBet = ante;
+    bettingIsOpen = false;
     bettingRound();
 
     // See if all but one person folded
@@ -90,9 +96,10 @@ void PokerGame::playPoker()
 
     // Fresh betting round, per standard rules
     previousBet = ante;
+    bettingIsOpen = false;
     bettingRound();
 
-    showDown();
+    // Its showtime
     showDown();
 }
 
@@ -112,7 +119,54 @@ void PokerGame::dealCards()
 
 void PokerGame::showDown()
 {
-    std::cout << "Its showtime." << std::endl;
+    if (players.empty()) 
+    {
+        std::cout << "No players to create hands for." << std::endl;
+        return;
+    }
+
+    // Create a vector to store pokerHand objects and track active (non-folded) players
+    std::vector<pokerHand> activeHands;
+    std::vector<std::shared_ptr<PlayerI>> activePlayers;
+
+    for (const auto& player : players) 
+    {
+        if (!player->isFolded)
+        {
+            activeHands.emplace_back(player->hand);
+            activePlayers.push_back(player); // Track the player corresponding to the hand
+        }
+    }
+
+    std::cout << "It's showtime." << std::endl;
+    std::this_thread::sleep_for(std::chrono::milliseconds(3000));
+    std::cout << "Everyone drops their cards..." << std::endl;
+    std::this_thread::sleep_for(std::chrono::milliseconds(6000));
+
+    // Determine the best hand and the corresponding player
+    size_t bestIndex = 0;
+
+    for (size_t i = 1; i < activeHands.size(); i++) 
+    {
+        if (activeHands[i].compare(activeHands[bestIndex]) == 1)
+        {
+            bestIndex = i;
+        }
+    }
+
+    std::cout << "The winner is: " << activePlayers[bestIndex]->name << "!" << std::endl; 
+    activePlayers[bestIndex]->lookAtHand(); 
+    std::cout << "Which is a " << activeHands[bestIndex].getHandRankString() << std::endl << std::endl;
+    std::cout << "Pot won: $ " << moneyPot << std::endl << std::endl;
+    std::cout << "Player Stats: " << std::endl;
+
+    for (const auto& player : players) 
+    {
+        std::cout << player->name << std::endl << "Money bet: $" << player->moneyBet << std::endl;
+        player->lookAtHand();
+    }
+
+    std::cout << std::endl << "Thanks for playing!" << std::endl;
 }
 
 bool PokerGame::checkFoldedWinner()
@@ -139,7 +193,6 @@ bool PokerGame::checkFoldedWinner()
 
     return false;
 }
-
 
 void PokerGame::bettingRound()
 {
@@ -174,6 +227,7 @@ void PokerGame::bettingRound()
                     {
                         remainingPlayer->isDone = false;
                     }
+
                     player->isDone = true;
                 }
                 else if (bet == 0 && bettingIsOpen)
@@ -188,7 +242,7 @@ void PokerGame::bettingRound()
                 }
 
                 moneyPot += bet; // Add valid bets to the pot
-                std::cout << "The pot contains: $" << moneyPot << std::endl << std::endl;
+                std::cout << std::endl << "The pot contains: $" << moneyPot << std::endl << std::endl;
             }
         }
 
@@ -207,6 +261,7 @@ void PokerGame::bettingRound()
             }
         }
     }
+
     std::cout << "The betting round is over!" << std::endl << std::endl;
 }
 
@@ -221,20 +276,22 @@ void PokerGame::drawRound()
             player->drawCards(this->deck);
         }  
     }
+
     std::cout << "The draw round is over!" << std::endl << std::endl;
 }
 
 int PokerGame::getValidUserInt()
 {
     int value;
-    while (true) {
+    while (true) 
+    {
         std::cin >> value;
 
         // Check if input is valid
         if (std::cin.fail() || value < 0) {
             std::cin.clear(); // Clear error flag
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
-            std::cout << "Invalid input. Please enter a valid integer.\n";
+            std::cout << "Invalid input. Please enter a valid integer." << std::endl;
         }
         else {
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard extra input

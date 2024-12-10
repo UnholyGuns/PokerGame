@@ -132,6 +132,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PlayerI.cpp" />
     <ClCompile Include="PokerGame.cpp" />
+    <ClCompile Include="pokerHand.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AiPlayer.h" />
@@ -139,6 +140,7 @@
     <ClInclude Include="HumanPlayer.h" />
     <ClInclude Include="PlayerI.h" />
     <ClInclude Include="PokerGame.h" />
+    <ClInclude Include="pokerHand.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

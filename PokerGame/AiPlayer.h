@@ -2,7 +2,8 @@
 
 #include "PlayerI.h"
 
-class AiPlayer : public PlayerI {
+class AiPlayer : public PlayerI 
+{
 public:
 	AiPlayer(int index);
 	int placeBet(int previousBet, bool& bettingIsOpen) override;

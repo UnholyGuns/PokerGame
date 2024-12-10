@@ -30,6 +30,9 @@
     <ClCompile Include="PlayerI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pokerHand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PokerGame.h">
@@ -45,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Card.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pokerHand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

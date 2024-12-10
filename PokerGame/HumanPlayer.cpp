@@ -34,12 +34,12 @@ int HumanPlayer::placeBet(int previousBet, bool& bettingIsOpen)
     {
         std::cout << "Enter your choice: ";
         std::cin >> choice;
-
         if (choice == 1)
         {
-            // Call or Check
+            // Call or check
             if (bettingIsOpen)
             {
+                moneyBet += previousBet;
                 return previousBet;
             }
             else 
@@ -50,7 +50,7 @@ int HumanPlayer::placeBet(int previousBet, bool& bettingIsOpen)
         }
         else if (choice == 2) 
         {
-            // Raise or Place a Starting Bet
+            // Raise or place a starting bet
             if (bettingIsOpen)
             {
                 std::cout << "Enter the amount to raise: ";
@@ -61,13 +61,13 @@ int HumanPlayer::placeBet(int previousBet, bool& bettingIsOpen)
             }
 
             std::cin >> betAmount;
-
             if (betAmount > previousBet ) 
             {
                 if (!bettingIsOpen) 
                 {
                     bettingIsOpen = true;
                 }
+                moneyBet += betAmount;
                 return betAmount;
             }
             else 
@@ -93,55 +93,84 @@ void HumanPlayer::drawCards(std::vector<CardClass::Card> deck)
 {
     std::cout << this->name << "'s turn to draw new cards!" << std::endl;
 
-    lookAtHand();
+    lookAtHandIndices();
 
     std::cout << "Enter the indices of the cards you want to replace (space-separated).";
     std::cout << "Press Enter without inputting anything to keep all cards: ";
 
-    // Clear the input buffer
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    // Clear the input buffer only if necessary
+    if (std::cin.peek() == '\n') 
+    {
+        std::cin.ignore(); 
+    }
 
     std::string input;
     std::getline(std::cin, input);
+
+    if (input.empty()) 
+    {
+        std::cout << "No cards will be replaced." << std::endl;
+        return;
+    }
 
     std::vector<int> indicesToReplace;
     std::istringstream iss(input);
     int index;
 
-    while (iss >> index) {
-        if (index >= 0 && static_cast<size_t>(index) < hand.size()) {
+    while (iss >> index) 
+    {
+        if (index >= 0 && static_cast<size_t>(index) < hand.size()) 
+        {
             indicesToReplace.push_back(index);
         }
-        else {
+        else 
+        {
             std::cout << "Invalid index: " << index << ". Skipping." << std::endl;
         }
     }
 
     // Replace the selected cards
-    for (int indexx : indicesToReplace) {
+    for (int indexx : indicesToReplace) 
+    {
         if (!deck.empty()) {
             hand[indexx] = deck.back(); 
             deck.pop_back();        
         }
-        else {
-            std::cout << "Deck is empty! Cannot draw more cards.\n";
+        else 
+        {
+            std::cout << "Deck is empty! Cannot draw more cards." << std::endl;
             break;
         }
     }
 
     // Display the updated hand
-    std::cout << std::endl << this->name << "'s updated hand:\n";
-    for (size_t i = 0; i < hand.size(); ++i) {
-        std::cout << i << ": " << hand[i].rank << " of " << hand[i].suit << "\n";
+    std::cout << std::endl << this->name << "'s updated hand:" << std::endl;
+    for (size_t i = 0; i < hand.size(); i++) 
+    {
+        std::cout << i << ": " << hand[i].rank << " of " << hand[i].suit << std::endl;
     }
+
     std::cout << std::endl;
 }
 
 void HumanPlayer::lookAtHand()
 {
-    std::cout << this->name << "'s hand:\n";
+    std::cout << this->name << "'s hand: " << std::endl;
 
-    for (size_t i = 0; i < hand.size(); ++i) {
+    for (const auto& card : hand) 
+    {
+        std::cout << card.rank << " of " << card.suit << ", ";
+    }
+
+    std::cout << std::endl << std::endl;
+}
+
+void HumanPlayer::lookAtHandIndices()
+{
+    std::cout << this->name << "'s hand:" << std::endl;
+
+    for (size_t i = 0; i < hand.size(); ++i) 
+    {
         std::cout << i << ": " << hand[i].rank << " of " << hand[i].suit << std::endl;
     }
 

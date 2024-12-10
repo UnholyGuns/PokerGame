@@ -2,7 +2,8 @@
 
 #include <string>
 
-class CardClass {
+class CardClass 
+{
 public:
 	struct Card {
 		std::string rank;

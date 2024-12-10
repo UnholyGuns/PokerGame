@@ -7,16 +7,17 @@
 #include <numeric>   
 #include <algorithm>
 #include <sstream>
-#include "Card.h"
 #include <thread> 
 #include <chrono>
 
-class PlayerI {
+#include "Card.h"
+
+class PlayerI 
+{
 public:
 	std::string name;
 	int moneyBet;
 	std::vector<CardClass::Card> hand;
-
 	bool isDone;
 	bool isFolded;
 

@@ -3,8 +3,8 @@
 
 using namespace std;
 
-int main() {
-
+int main() 
+{
 	PokerGame mainGame;
 
 	mainGame.initGame();
