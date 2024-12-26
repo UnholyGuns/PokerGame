@@ -62,8 +62,7 @@
               "RelativeToolTip": "pokerHand.cpp",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-26T19:36:05.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T19:36:05.49Z"
             },
             {
               "$type": "Document",
@@ -87,8 +86,7 @@
               "RelativeToolTip": "HumanPlayer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T16:15:59.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T16:15:59.69Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "AiPlayer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T16:14:39.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T16:14:39.691Z"
             },
             {
               "$type": "Document",
@@ -113,8 +110,7 @@
               "RelativeToolTip": "PlayerI.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T16:14:16.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T16:14:16.941Z"
             },
             {
               "$type": "Document",
@@ -124,7 +120,7 @@
               "RelativeDocumentMoniker": "PokerGame.cpp",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.cpp",
               "RelativeToolTip": "PokerGame.cpp",
-              "ViewState": "AgIAAOUAAAAAAAAAAAAAAPUAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAANIAAAAAAAAAAAAIwPUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-10T15:57:59.743Z",
               "EditorCaption": ""
@@ -151,8 +147,7 @@
               "RelativeToolTip": "HumanPlayer.cpp",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAEIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T15:53:53.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T15:53:53.466Z"
             },
             {
               "$type": "Document",
@@ -164,8 +159,7 @@
               "RelativeToolTip": "AiPlayer.cpp",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T15:51:40.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T15:51:40.24Z"
             }
           ]
         }
