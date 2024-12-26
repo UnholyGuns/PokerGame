@@ -23,13 +23,13 @@ PokerGame::PokerGame(){
 
 void PokerGame::shuffleDeck()
 {
-    // Seed the rand function so its different everytime
+    // Seed the rand function so its different every time
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
 
-    for (size_t i = this->deck.size() - 1; i > 0; i++) 
+    for (size_t i = this->deck.size(); i > 1; i--)
     {
-        int j = std::rand() % (i + 1); // Generate a random index
-        std::swap(this->deck[i], this->deck[j]);// Swap the current element with the randomly chosen element
+        int j = std::rand() % i; // Generate a random index within bounds
+        std::swap(this->deck[i - 1], this->deck[j]); // Swap the last element with a random one
     }
 }
 
