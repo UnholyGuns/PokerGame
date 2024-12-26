@@ -50,8 +50,8 @@ int AiPlayer::placeBet(int& maxBet, bool& bettingIsOpen)
         }
         else// Aggressive bet 
         {
-            raiseAmount = (maxBet - moneyBetInRound) * 2;
-            maxBet += raiseAmount;
+            raiseAmount = maxBet * 2;
+            maxBet = raiseAmount;
         }
     }
     else if (handStrength > 30)// Moderate Bet
@@ -63,8 +63,8 @@ int AiPlayer::placeBet(int& maxBet, bool& bettingIsOpen)
         }
         else// Moderate bet 
         {
-            raiseAmount = (maxBet - moneyBetInRound) * 1.3;
-            maxBet += raiseAmount;
+            raiseAmount = maxBet * 1.3;
+            maxBet = raiseAmount;
         }
     }
     else 
