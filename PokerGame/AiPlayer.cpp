@@ -27,7 +27,7 @@ int AiPlayer::placeBet(int previousBet, bool& bettingIsOpen)
         {
             // Place a random starting bet between 5 and 10
             int randomBet = 5 + 1 + (rand() % 6);         
-            moneyBet += randomBet;
+            moneyBet += randomBet + previousBet;
             bettingIsOpen = true;
             return randomBet;
         }
