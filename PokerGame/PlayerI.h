@@ -23,7 +23,7 @@ public:
 	bool isFolded;
 
 	virtual void lookAtHand() = 0;
-	virtual int placeBet(int previousBet, bool& bettingIsOpen) = 0;
+	virtual int placeBet(int& maxBet, bool& bettingIsOpen) = 0;
 	virtual void drawCards(std::vector<CardClass::Card> deck) = 0;
 	
 };

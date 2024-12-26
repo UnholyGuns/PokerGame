@@ -9,7 +9,7 @@ HumanPlayer::HumanPlayer(std::string name)
     isFolded = false;
 }
 
-int HumanPlayer::placeBet(int maxBet, bool& bettingIsOpen)
+int HumanPlayer::placeBet(int& maxBet, bool& bettingIsOpen)
 {
     lookAtHand();
 
@@ -18,7 +18,7 @@ int HumanPlayer::placeBet(int maxBet, bool& bettingIsOpen)
         std::cout << "The current bet is $" << maxBet << std::endl;
         std::cout << "You can choose to:" << std::endl;
         std::cout << "1. Call (match the bet)" << std::endl;
-        std::cout << "2. Raise (bet more)" << std::endl;
+        std::cout << "2. Raise to (bet more)" << std::endl;
         std::cout << "3. Fold (exit the round)" << std::endl;
     }
     else 
@@ -69,9 +69,11 @@ int HumanPlayer::placeBet(int maxBet, bool& bettingIsOpen)
                 {
                     bettingIsOpen = true;
                 }
-                moneyBetInRound += betAmount;
-                moneyBetTotal += betAmount;
-                return betAmount;
+                int myBet = betAmount - moneyBetInRound;
+                moneyBetInRound += myBet;
+                moneyBetTotal += myBet;
+                maxBet = betAmount;
+                return myBet;
             }
             else 
             {

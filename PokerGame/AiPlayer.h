@@ -6,7 +6,7 @@ class AiPlayer : public PlayerI
 {
 public:
 	AiPlayer(int index);
-	int placeBet(int maxBet, bool& bettingIsOpen) override;
+	int placeBet(int& maxBet, bool& bettingIsOpen) override;
 	void drawCards(std::vector<CardClass::Card> deck) override;
 	void lookAtHand() override;
 

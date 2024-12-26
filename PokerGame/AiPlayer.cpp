@@ -9,7 +9,7 @@ AiPlayer::AiPlayer(int index)
     isFolded = false;
 }
 
-int AiPlayer::placeBet(int maxBet, bool& bettingIsOpen)
+int AiPlayer::placeBet(int& maxBet, bool& bettingIsOpen)
 {
     std::cout << "The opponent studies their hand..." << std::endl;
     std::this_thread::sleep_for(std::chrono::milliseconds(6000));
@@ -26,7 +26,7 @@ int AiPlayer::placeBet(int maxBet, bool& bettingIsOpen)
         else 
         {
             // Place a random starting bet between 5 and 10
-            int randomBet = 1 + (rand() % maxBet);
+            int randomBet = maxBet + 1 + (rand() % 5);
             moneyBetInRound += randomBet;
             moneyBetTotal += randomBet;
             bettingIsOpen = true;

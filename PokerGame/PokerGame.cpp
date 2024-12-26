@@ -221,13 +221,15 @@ void PokerGame::bettingRound()
         {
             if (!player->isDone && !player->isFolded) 
             {
+                int prevMaxBet = maxBet;
+
                 std::cout << player->name << "'s turn to place a bet!" << std::endl;
+
                 int bet = player->placeBet(maxBet, bettingIsOpen);
 
-                if (bet > maxBet)
+                if (maxBet > prevMaxBet)
                 {
-                    maxBet = bet;
-                    std::cout << player->name << " raises to $" << bet << std::endl;
+                    std::cout << player->name << " raises to $" << maxBet << std::endl;
 
                     // Since someone raised, give everyone a chance to play again, except for the person who just raised
                     for (auto& remainingPlayer : players)
@@ -241,6 +243,7 @@ void PokerGame::bettingRound()
                 {
                     std::cout << player->name << " folds." << std::endl;
                     player->isFolded = true;
+                    bet = 0;
                 }
                 else if (bet != 0)
                 {
