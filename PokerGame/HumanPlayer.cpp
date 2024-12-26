@@ -3,18 +3,19 @@
 HumanPlayer::HumanPlayer(std::string name)
 {
 	this->name = name;
-    moneyBet = 0;
+    moneyBetInRound = 0;
+    moneyBetTotal = 0;
     isDone = false;
     isFolded = false;
 }
 
-int HumanPlayer::placeBet(int previousBet, bool& bettingIsOpen)
+int HumanPlayer::placeBet(int maxBet, bool& bettingIsOpen)
 {
     lookAtHand();
 
     if (bettingIsOpen) 
     {
-        std::cout << "The current bet is $" << previousBet << std::endl;
+        std::cout << "The current bet is $" << maxBet << std::endl;
         std::cout << "You can choose to:" << std::endl;
         std::cout << "1. Call (match the bet)" << std::endl;
         std::cout << "2. Raise (bet more)" << std::endl;
@@ -24,7 +25,7 @@ int HumanPlayer::placeBet(int previousBet, bool& bettingIsOpen)
     {
         std::cout << "No bets have been placed yet. You can:" << std::endl;
         std::cout << "1. Check" << std::endl;
-        std::cout << "2. Bet a starting amount (Ante is: $" << previousBet << ")" << std::endl;
+        std::cout << "2. Bet a starting amount (Ante is: $" << maxBet << ")" << std::endl;
     }
 
     int choice = 0;
@@ -39,12 +40,13 @@ int HumanPlayer::placeBet(int previousBet, bool& bettingIsOpen)
             // Call or check
             if (bettingIsOpen)
             {
-                moneyBet += previousBet;
-                return previousBet;
+                int myBet = (maxBet - moneyBetInRound);
+                moneyBetInRound += myBet;
+                moneyBetTotal += myBet;
+                return myBet;
             }
             else 
             {
-                std::cout << "You checked." << std::endl;
                 return 0;
             }
         }
@@ -61,13 +63,14 @@ int HumanPlayer::placeBet(int previousBet, bool& bettingIsOpen)
             }
 
             std::cin >> betAmount;
-            if (betAmount > previousBet ) 
+            if (betAmount > maxBet)
             {
                 if (!bettingIsOpen) 
                 {
                     bettingIsOpen = true;
                 }
-                moneyBet += betAmount;
+                moneyBetInRound += betAmount;
+                moneyBetTotal += betAmount;
                 return betAmount;
             }
             else 
@@ -78,8 +81,7 @@ int HumanPlayer::placeBet(int previousBet, bool& bettingIsOpen)
         else if (choice == 3 && bettingIsOpen)
         {
             // Fold
-            isFolded = true;
-            return 0;
+            return -1;
         }
         else 
         {

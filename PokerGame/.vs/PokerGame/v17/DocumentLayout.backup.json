@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:PokerGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:PokerGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\Card.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:Card.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\HumanPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:HumanPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\HumanPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:HumanPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:PokerGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:AiPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:AiPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PlayerI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:PlayerI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\HumanPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:HumanPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:PokerGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:AiPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\pokerHand.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -50,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,27 +54,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "pokerHand.cpp",
+              "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\pokerHand.cpp",
+              "RelativeDocumentMoniker": "pokerHand.cpp",
+              "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\pokerHand.cpp",
+              "RelativeToolTip": "pokerHand.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-26T19:36:05.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PokerGame.h",
               "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.h",
               "RelativeDocumentMoniker": "PokerGame.h",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.h",
               "RelativeToolTip": "PokerGame.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAADwvxQAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvx0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T16:16:58.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Card.h",
-              "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\Card.h",
-              "RelativeDocumentMoniker": "Card.h",
-              "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\Card.h",
-              "RelativeToolTip": "Card.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T16:16:44.956Z"
+              "WhenOpened": "2024-12-10T16:16:58.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -88,9 +86,10 @@
               "RelativeDocumentMoniker": "HumanPlayer.h",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\HumanPlayer.h",
               "RelativeToolTip": "HumanPlayer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T16:15:59.69Z"
+              "WhenOpened": "2024-12-10T16:15:59.69Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -100,50 +99,40 @@
               "RelativeDocumentMoniker": "AiPlayer.h",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.h",
               "RelativeToolTip": "AiPlayer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T16:14:39.691Z"
+              "WhenOpened": "2024-12-10T16:14:39.691Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "PlayerI.h",
               "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PlayerI.h",
               "RelativeDocumentMoniker": "PlayerI.h",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PlayerI.h",
               "RelativeToolTip": "PlayerI.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T16:14:16.941Z"
+              "WhenOpened": "2024-12-10T16:14:16.941Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "pokerHand.cpp",
-              "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\pokerHand.cpp",
-              "RelativeDocumentMoniker": "pokerHand.cpp",
-              "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\pokerHand.cpp",
-              "RelativeToolTip": "pokerHand.cpp",
-              "ViewState": "AgIAAG4BAAAAAAAAAAAAAIABAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T16:00:59.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PokerGame.cpp",
               "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.cpp",
               "RelativeDocumentMoniker": "PokerGame.cpp",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.cpp",
               "RelativeToolTip": "PokerGame.cpp",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAASwJ8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-10T15:57:59.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
@@ -151,31 +140,34 @@
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T15:57:58.677Z"
+              "WhenOpened": "2024-12-10T15:57:58.677Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "HumanPlayer.cpp",
               "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\HumanPlayer.cpp",
               "RelativeDocumentMoniker": "HumanPlayer.cpp",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\HumanPlayer.cpp",
               "RelativeToolTip": "HumanPlayer.cpp",
-              "ViewState": "AgIAAJYAAAAAAAAAAADwv6EAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T15:53:53.466Z"
+              "WhenOpened": "2024-12-10T15:53:53.466Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "AiPlayer.cpp",
               "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.cpp",
               "RelativeDocumentMoniker": "AiPlayer.cpp",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.cpp",
               "RelativeToolTip": "AiPlayer.cpp",
-              "ViewState": "AgIAAHgAAAAAAAAAAADwv3sAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T15:51:40.24Z"
+              "WhenOpened": "2024-12-10T15:51:40.24Z",
+              "EditorCaption": ""
             }
           ]
         }

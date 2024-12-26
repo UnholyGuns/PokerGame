@@ -16,7 +16,8 @@ class PlayerI
 {
 public:
 	std::string name;
-	int moneyBet;
+	int moneyBetInRound;
+	int moneyBetTotal;
 	std::vector<CardClass::Card> hand;
 	bool isDone;
 	bool isFolded;

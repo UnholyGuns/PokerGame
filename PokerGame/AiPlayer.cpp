@@ -3,12 +3,13 @@
 AiPlayer::AiPlayer(int index)
 {
 	this->name = "Ai Player " + std::to_string(index);
-    moneyBet = 0;
+    moneyBetInRound = 0;
+    moneyBetTotal = 0;
     isDone = false;
     isFolded = false;
 }
 
-int AiPlayer::placeBet(int previousBet, bool& bettingIsOpen)
+int AiPlayer::placeBet(int maxBet, bool& bettingIsOpen)
 {
     std::cout << "The opponent studies their hand..." << std::endl;
     std::this_thread::sleep_for(std::chrono::milliseconds(6000));
@@ -20,14 +21,14 @@ int AiPlayer::placeBet(int previousBet, bool& bettingIsOpen)
         int randomChoice = rand() % 2;
         if (randomChoice == 0) 
         {
-            std::cout << this->name << " checks." << std::endl;
             return 0;
         }
         else 
         {
             // Place a random starting bet between 5 and 10
-            int randomBet = 5 + 1 + (rand() % 6);         
-            moneyBet += randomBet + previousBet;
+            int randomBet = 1 + (rand() % maxBet);
+            moneyBetInRound += randomBet;
+            moneyBetTotal += randomBet;
             bettingIsOpen = true;
             return randomBet;
         }
@@ -36,7 +37,7 @@ int AiPlayer::placeBet(int previousBet, bool& bettingIsOpen)
     int handStrength = getHandStrength();
 
     // Decide the bet based on hand strength
-    int bet = 0;
+    int raiseAmount = 0;
     int randomChoice = rand() % 5;
 
     if (handStrength > 60)
@@ -44,11 +45,11 @@ int AiPlayer::placeBet(int previousBet, bool& bettingIsOpen)
         // Randomly choose between a aggressive raise and a call
         if (0 <= randomChoice && randomChoice <= 2)// Call the previous bet
         {
-            bet = previousBet;
+            raiseAmount = (maxBet - moneyBetInRound);
         }
         else// Aggressive bet 
         {
-            bet = previousBet * 2;
+            raiseAmount = (maxBet - moneyBetInRound) * 2;
         }
     }
     else if (handStrength > 30)// Moderate Bet
@@ -56,20 +57,22 @@ int AiPlayer::placeBet(int previousBet, bool& bettingIsOpen)
         // Randomly choose between a moderate raise and a call
         if (0 <= randomChoice && randomChoice <= 3)// Call the previous bet
         {
-            bet = previousBet;
+            raiseAmount = (maxBet - moneyBetInRound);
         }
         else// Moderate bet 
         {
-            bet = previousBet * 1.3;          
+            raiseAmount = (maxBet - moneyBetInRound) * 1.3;
         }
     }
     else 
     {
-        bet = 0; 
+        // Fold
+        return -1;
     }
 
-    moneyBet += bet;
-    return bet;
+    moneyBetInRound += raiseAmount;
+    moneyBetTotal += raiseAmount;
+    return raiseAmount;
 }
 
 void AiPlayer::drawCards(std::vector<CardClass::Card> deck)

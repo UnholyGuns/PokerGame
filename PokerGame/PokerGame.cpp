@@ -16,7 +16,7 @@ void PokerGame::createDeck()
 
 PokerGame::PokerGame(){
     moneyPot = 0;
-    previousBet = 0;
+    maxBet = 0;
     ante = 0;
     bettingIsOpen = false;
 }
@@ -82,7 +82,7 @@ void PokerGame::playPoker()
     dealCards();
 
     // First round of betting
-    previousBet = ante;
+    maxBet = ante;
     bettingIsOpen = false;
     bettingRound();
 
@@ -95,8 +95,15 @@ void PokerGame::playPoker()
     drawRound();
 
     // Fresh betting round, per standard rules
-    previousBet = ante;
+    maxBet = ante;
     bettingIsOpen = false;
+
+    // Reset money bet in current round counter
+    for (auto& player : players)
+    {
+        player->moneyBetInRound = 0;
+    }
+
     bettingRound();
 
     // Its showtime
@@ -162,7 +169,7 @@ void PokerGame::showDown()
 
     for (const auto& player : players) 
     {
-        std::cout << player->name << std::endl << "Money bet: $" << player->moneyBet << std::endl;
+        std::cout << player->name << std::endl << "Money bet: $" << player->moneyBetTotal << std::endl;
         player->lookAtHand();
     }
 
@@ -215,12 +222,12 @@ void PokerGame::bettingRound()
             if (!player->isDone && !player->isFolded) 
             {
                 std::cout << player->name << "'s turn to place a bet!" << std::endl;
-                int bet = player->placeBet(previousBet, bettingIsOpen);
+                int bet = player->placeBet(maxBet, bettingIsOpen);
 
-                if (bet > previousBet)
+                if (bet > maxBet)
                 {
-                    std::cout << player->name << " raises with $" << bet << std::endl;
-                    previousBet = bet;
+                    maxBet = bet;
+                    std::cout << player->name << " raises to $" << bet << std::endl;
 
                     // Since someone raised, give everyone a chance to play again, except for the person who just raised
                     for (auto& remainingPlayer : players)
@@ -230,15 +237,19 @@ void PokerGame::bettingRound()
 
                     player->isDone = true;
                 }
-                else if (bet == 0 && bettingIsOpen)
+                else if (bet == -1)
                 {
                     std::cout << player->name << " folds." << std::endl;
                     player->isFolded = true;
                 }
-                else if (bet == previousBet)
+                else if (bet != 0)
                 {
                     std::cout << player->name << " calls." << std::endl;
                     player->isDone = true;
+                }
+                else
+                {
+                    std::cout << player->name << " checks." << std::endl;
                 }
 
                 moneyPot += bet; // Add valid bets to the pot

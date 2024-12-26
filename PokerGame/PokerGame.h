@@ -27,7 +27,7 @@ private:
 	const int MAX_NUM_PLAYERS = 7;
 	const int MIN_NUM_PLAYERS = 2;
 	int moneyPot;
-	int previousBet;
+	int maxBet;
 	int ante;
 	bool bettingIsOpen;
 	

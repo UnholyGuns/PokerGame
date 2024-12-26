@@ -1,6 +1,4 @@
-﻿  PokerGame.cpp
-  main.cpp
-  pokerHand.cpp
+﻿  main.cpp
+  PokerGame.cpp
   Generating Code...
-  LINK : C:\Users\timfe\Documents\MASTERS\C++\PokerGame\PokerGame\x64\Debug\PokerGame.exe not found or not built by the last incremental link; performing full link
   PokerGame.vcxproj -> C:\Users\timfe\Documents\MASTERS\C++\PokerGame\PokerGame\x64\Debug\PokerGame.exe
