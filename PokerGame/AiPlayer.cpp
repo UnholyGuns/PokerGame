@@ -30,6 +30,7 @@ int AiPlayer::placeBet(int& maxBet, bool& bettingIsOpen)
             moneyBetInRound += randomBet;
             moneyBetTotal += randomBet;
             bettingIsOpen = true;
+            maxBet = randomBet;
             return randomBet;
         }
     }

@@ -1,4 +1,4 @@
 # Ignore Directories
-/PokerGame/.vs
-/PokerGame/PokerGame
-/PokerGame/x64
+/PokerGame/.vs/
+/PokerGame/PokerGame/
+/PokerGame/x64/

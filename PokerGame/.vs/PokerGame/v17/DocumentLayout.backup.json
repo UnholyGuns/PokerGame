@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:AiPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:PokerGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\HumanPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:HumanPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|solutionrelative:AiPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{268BF369-8158-4E75-B294-3838AA84FD44}|PokerGame.vcxproj|C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\HumanPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,13 +114,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PokerGame.cpp",
               "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.cpp",
               "RelativeDocumentMoniker": "PokerGame.cpp",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\PokerGame.cpp",
               "RelativeToolTip": "PokerGame.cpp",
-              "ViewState": "AgIAANIAAAAAAAAAAAAIwPUAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAANUAAAAAAAAAAAAIwOQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-10T15:57:59.743Z",
               "EditorCaption": ""
@@ -139,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HumanPlayer.cpp",
               "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\HumanPlayer.cpp",
               "RelativeDocumentMoniker": "HumanPlayer.cpp",
@@ -151,15 +151,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AiPlayer.cpp",
               "DocumentMoniker": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.cpp",
               "RelativeDocumentMoniker": "AiPlayer.cpp",
               "ToolTip": "C:\\Users\\timfe\\Documents\\MASTERS\\C\u002B\u002B\\PokerGame\\PokerGame\\AiPlayer.cpp",
               "RelativeToolTip": "AiPlayer.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T15:51:40.24Z"
+              "WhenOpened": "2024-12-10T15:51:40.24Z",
+              "EditorCaption": ""
             }
           ]
         }
