@@ -1,7 +1,0 @@
-﻿  AiPlayer.cpp
-C:\Users\timfe\Documents\MASTERS\C++\PokerGame\PokerGame\AiPlayer.cpp(64,54): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-  HumanPlayer.cpp
-  PokerGame.cpp
-  main.cpp
-  Generating Code...
-  PokerGame.vcxproj -> C:\Users\timfe\Documents\MASTERS\C++\PokerGame\PokerGame\x64\Debug\PokerGame.exe
